@@ -1,0 +1,49 @@
+:root{
+    --bg-color: #FCF8EC;
+    --color-bg-buttoon: #D0E8F2;
+    --color-icons: #79A3B1;
+    --color-text: #456268;
+}
+.dark{
+    --bg-color: #2C3333;
+    --color-bg-buttoon: #395B64;
+    --color-icons: #A5C9CA;
+    --color-text: #E7F6F2;
+}
+/* Geral */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: var(--color-text);
+}
+body{
+    background-color: var(--bg-color);
+}
+button{
+    background-color: var(--color-bg-buttoon);
+    color: var(--color-icons);
+    border: 2px solid var(--color-icons);
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+button:hover{
+    background-color: var(--color-icons);
+    color: var(--color-bg-buttoon);
+}
+button:hover > i{
+    color: var(--color-bg-buttoon);
+}
+button i{
+    color: var(--color-icons);
+    font-weight: bold;
+    pointer-events: none;
+}
+input, select{
+    padding: 0.25rem 0.5rem;
+}
