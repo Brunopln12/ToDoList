@@ -69,6 +69,26 @@ input, select{
     text-align: center;
     padding: 0 1rem 1rem;
     border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modeDark{
+    width: 50px;
+    height: 25px;
+    border-radius: 12px;
+    padding: 2px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.todo-container form div input{
+    background-color: var(--bg-color);
+}
+.align{
+    justify-content: flex-end;
 }
 
 /* ToDo Form */
@@ -89,40 +109,6 @@ input, select{
 }
 #cancel-edit-btn{
     margin-top: 1rem;
-}
-
-/* ToDo toolbar */
-
-.toolbar{
-    padding: 1rem;
-    border-bottom: 1px solid;
-    display: flex;
-}
-.toolbar h4{
-    margin-bottom: .5rem;
-}
-.search{
-    border-right: 1px solid;
-    padding-right: 1rem;
-    margin-right: 1rem;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-}
-.search form{
-    display: flex;
-}
-.search input{
-    width: 100%;
-    margin-right: .3rem;
-}
-#filter{
-    width: 35%;
-    display: flex;
-    flex-direction: column;
-}
-#filter select{
-    flex: 1;
 }
 
 /* ToDo List */
